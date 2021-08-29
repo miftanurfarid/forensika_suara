@@ -194,7 +194,7 @@
 	\begin{itemize}
 		\item Gambar \ref{fig:img006} adalah waveform periodik dan Gambar \ref{fig:img007} adalah magnitude spektrumnya.
 		\item Gambar \ref{fig:img007} dapat diperoleh dengan menggunakan deret Fourier.
-		\item Selain itu, transformasi Fourier dapat digunakan untuk menghitung spektrum dari waveform nonperiodik seperti yang ditunjukkan oleh Gambar dan Gambar.
+		\item Selain itu, transformasi Fourier dapat digunakan untuk menentukan spektrum dari waveform nonperiodik seperti yang ditunjukkan oleh Gambar \ref{fig:img008} dan Gambar \ref{fig:img009}.
 		\item Nanti akan dijelaskan cara memperoleh waveform dan spektrum menggunakan Google Colab.
 	\end{itemize}
 \end{frame}
@@ -221,9 +221,39 @@
 \begin{frame}
 	\frametitle{Spektrum dari Waveform Nonperiodik}
 	\begin{multicols}{2}
-		
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{img/img008}
+			\caption{Waveform nonperiodik dari sinyal suara}
+			\label{fig:img008}
+		\end{figure}
 		\columnbreak
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{img/img009}
+			\caption{Spektrum frekuensi dari waveform nonperiodik}
+			\label{fig:img009}
+		\end{figure}
 	\end{multicols}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Octave}
+	\begin{itemize}
+		\item Octave: frekuensi dasar dari suatu sinyal adalah dua kalinya dari frekuensi dasar sinyal lain.
+		\item Satu octave di atas puretone 200 Hz adalah 400 Hz.
+		\item Dua octave di atas puretone 200 Hz adalah 800 Hz.
+	\end{itemize}
+\end{frame}
+
+\section{Propagasi Gelombang}
+\begin{frame}
+	\frametitle{Propagasi Gelombang}
+	\begin{itemize}
+		\item Gelombang bunyi di udara berpropagasi menjauhi sumber bunyi ke segala arah/ spherical wave.
+		\item Semakin jauh dari sumber bunyi, daya bunyi akan berkurang.
+		\item Jika tidak ada pantulan bunyi, luas permukaan spherical proporsional terhadap radius kuadrat ($ 4\pi r^2 $)
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
