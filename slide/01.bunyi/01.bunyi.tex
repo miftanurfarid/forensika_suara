@@ -3,9 +3,10 @@
 %\usetheme[dark,framenumber,totalframenumber]{ElektroITK}
 \usetheme[darktitle,framenumber,totalframenumber]{ElektroITK}
 
-\renewcommand{\figurename}{Gambar.} \setbeamertemplate{caption}[numbered]
+\renewcommand{\figurename}{Gambar} \setbeamertemplate{caption}[numbered]
 
 \usepackage{graphicx}
+\usepackage{multicol}
 
 \title{FORENSIKA SUARA}
 \subtitle{Konsep Dasar Sinyal dan Sistem Audio}
@@ -140,9 +141,12 @@
 \begin{frame}
 	\frametitle{Sinewave}
 	\begin{itemize}
-		\item Jenis paling sederhana dari suara berkelanjutan terdiri dari energi pada frekuensi tunggal.
-		\item Jenis ini disebut pure tone.
-		\item Bentuk gelombang (waveform) dari bunyi frekuensi tunggal ini seperti pada Gambar \ref{fig:img003}, yang secara matematis disebut dengan sine wave atau sinusoidal.
+		\item Jenis paling sederhana dari bunyi yang memiliki energi pada frekuensi tunggal adalah pure tone.
+		\item Bentuk gelombang (waveform) dari bunyi frekuensi tunggal ini seperti pada Gambar \ref{fig:img003}.
+		\item Disebut juga sinewave atau sinusoidal.
+		\item Sumbu y dapat berupa tekanan, tegangan, atau perpindahan (displacement) dan sumbu x adalah waktu.
+		\item Gambar \ref{fig:img003} memiliki T = 1 md dan frekuensi = 1/T = 1 kHz.
+		\item Untuk sinewave dengan interval yang lebih lama ditunjukkan oleh Gambar \ref{fig:img004}.
 	\end{itemize}
 \end{frame}
 
@@ -156,4 +160,77 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Sinewave}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/img004}
+		\caption{Sinewave 1 kHz dengan 5 siklus}
+		\label{fig:img004}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Spektrum}
+	\begin{itemize}
+		\item Waveform yang periodik memiliki spektrum yang harmonik.
+		\item Artinya energi hanya ada pada frekuensi yang merupakan kelipatan bilangan bulat dari frekuensi dasar/fundamental frequency ($ f_0 $).
+		\item Gambar \ref{fig:img005} merupakan spektrum dari sinewave 1kHz puretone.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Spektrum}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/img005}
+		\caption{Magnitudo spektrum frekuensi 1 kHz puretone}
+		\label{fig:img005}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Waveform dan Spektrum}
+	\begin{itemize}
+		\item Gambar \ref{fig:img006} adalah waveform periodik dan Gambar \ref{fig:img007} adalah magnitude spektrumnya.
+		\item Gambar \ref{fig:img007} dapat diperoleh dengan menggunakan deret Fourier.
+		\item Selain itu, transformasi Fourier dapat digunakan untuk menghitung spektrum dari waveform nonperiodik seperti yang ditunjukkan oleh Gambar dan Gambar.
+		\item Nanti akan dijelaskan cara memperoleh waveform dan spektrum menggunakan Google Colab.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Waveform dan Spektrum}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{img/img006}
+			\caption{Contoh waveform periodik dengan frekuensi dasar 1 kHz}
+			\label{fig:img006}
+		\end{figure}
+		\columnbreak
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{img/img007}
+			\caption{Spektrum frekuensi dari waveform periodik dengan frekuensi dasar 1 kHz}
+			\label{fig:img007}
+		\end{figure}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Spektrum dari Waveform Nonperiodik}
+	\begin{multicols}{2}
+		
+		\columnbreak
+	\end{multicols}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Referensi}
+	\begin{enumerate}
+		\item Maher, R.C., (2018). Principles of Forensic Audio Analysis. New York: Springer.
+		\item https://www.gaussianwaves.com/2020/01/how-to-plot-fft-in-python-fft-of-basic-signals-sine-and-cosine-waves/
+	\end{enumerate}
+\end{frame}
 \end{document}
