@@ -7,3 +7,4 @@ referensi/*.djvu
 *.snm
 *.synctex.gz
 *.toc
+*__pycache__*
