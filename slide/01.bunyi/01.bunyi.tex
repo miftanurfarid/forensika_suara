@@ -32,7 +32,7 @@
 \begin{frame}
 	\frametitle{Pendahuluan}
 	\begin{itemize}
-		\item Untuk memahami dan menginterpretasikan rekaman forensik, perlu memahami konsep akustik sehingga bunyi yang dideteksi di dalam rekaman dapat dianalisis dan dikaitkan dengan karakteristik pemantulan (reflection), penyerapan (absorption), difraksi (diffraction), dan gema/dengung (reverberation) dari bunyi.
+		\item Untuk memahami dan menginterpretasikan rekaman forensik, perlu memahami konsep akustik sehingga bunyi yang dideteksi di dalam rekaman dapat dianalisis dan dikaitkan dengan karakteristik pemantulan (reflection), penyerapan (absorption), difraksi (diffraction), dan dengung (reverberation) dari bunyi.
 	\end{itemize}
 \end{frame}
 
@@ -251,16 +251,199 @@
 	\frametitle{Propagasi Gelombang}
 	\begin{itemize}
 		\item Gelombang bunyi di udara berpropagasi menjauhi sumber bunyi ke segala arah/ spherical wave.
+		\item Saat berpropagasi, energi bunyi dari sumber akan terdistribusi ke permukaan spherical tersebut.
 		\item Semakin jauh dari sumber bunyi, daya bunyi akan berkurang.
-		\item Jika tidak ada pantulan bunyi, luas permukaan spherical proporsional terhadap radius kuadrat ($ 4\pi r^2 $)
+		\item Jika tidak ada pantulan bunyi, luas permukaan spherical sebanding terhadap radius kuadrat ($ 4\pi r^2 $).
+		\item Sehingga intensitas bunyi (watt/satuan luas) menurun sebesar 1/($ r^2 $).
+		\item Intensitas bunyi sebanding dengan kuadrat tekanan bunyi, sehingga tekanan bunyi menurus sebesar 1/r.
 	\end{itemize}
 \end{frame}
+
+\begin{frame}
+	\frametitle{Penurunan SPL}
+	\begin{itemize}
+		\item Faktor 1/r untuk penurunan tekanan bunyi dengan meningkatnya jarak menghasilkan penurunan 6 db SPL setiap penggandaan jarak.
+		
+		\[ 20 \log_{10}((1/r) \times \frac{P}{P_{ref}}) = 20 \log_{10}(\frac{P}{P_{ref}}) - 20 \log_{10}(r) \]
+		
+		Jika r berubah dari 1 ke 2 (penggandaan jarak), maka
+		
+		\[ -20 \log_{10}(2) = -6.02 \text{ dB}\]
+		\item Namun pada kenyataannya, propagasi gelombang sphrical membentur suatu permukaan, sehingga teori tadi tidak berlaku karenan adanya superposisi dari pantulan bunyinya.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Kecepatan Bunyi}
+	\begin{itemize}
+		\item Kecepatan bunyi di udara bervariasi terhadap temperatur udara (Gambar \ref{fig:img010}).
+		\item Bunyi akan berpropagasi lebih cepat di udara yang hangat dari lebih lambat di udara dingin.
+		\item Bunyi dengan frekuensi tertentu $\rightarrow$ panjang gelombang lebih panjang di udara hangat daripada di udara dingin.
+		\item Bagaimana jika kondisi temperatur udaranya bergradient (Semakin tinggi semakin hangat suhunya) ?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Kecepatan Bunyi}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{img/img010}
+		\caption{Kecepatan bunyi di udara merupakan fungsi dari temperatur udara.}
+		\label{fig:img010}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Refraksi Akibat Beda Temperatur}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{img/img011a}
+			\caption{Efek refraksi akibat perbedaan temperatur udara, udara dingin di permukaan.}
+			\label{fig:img011a}
+		\end{figure}
+		\columnbreak
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{img/img011b}
+			\caption{efek refraksi akibat perbedaan temperatur udara, udara hangat di permukaan.}
+			\label{fig:img011b}
+		\end{figure}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bunyi Langsung dan Pantulan}
+	\begin{itemize}
+		\item Mikrofon mendeteksi tekanan akustik sesaat, yang terdiri dari
+		\begin{enumerate}
+			\item gelombang bunyi yang perpropagasi langsung melalui udara dari sumber bunyi ke mikrofon,
+			\item gelombang bunyi yang sampai ke mikrofon setelah dipantulkan oleh lantai, dinding, dan permukaan lainnya,
+			\item bunyi dengung/reverberant yang datang setelah beberapa pantulan.
+		\end{enumerate}
+		\item Sehingga audio rekaman berisikan informasi sumber bunyi dan karakteristik akustik dari lingkungan sekitarnya saat rekaman tersebut dibuat.
+		\item Jika ada bunyi latar, maka akan dideteksi oleh mikrofon juga.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bunyi Langsung dan Pantulan}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{img/img012}
+		\caption{Bunyi langsung dan bunyi pantulan orde pertama yang diterima oleh mikrofon.}
+		\label{fig:img012}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bunyi Pantulan}
+	\begin{itemize}
+		\item Pantulan yang paling mudah dideteksi/ didengar/ dirasakan adalah ketika permukaan bidang pantul jaraknya jauh dari sumber dan mikrofon.
+		\item Semakin jauh jarak pantulannya maka bunyi pantulnya akan sampai di mikrofon jauh setelah bunyi langsung, sehingga menghasilkan echo/ gema.
+		\item Jika sumber dan mikrofon jaraknya dekat dengan bidang pantul, delay antara bunyi langsung dan pantulan akan sangat kecil dan tak terasa oleh pendengar tapi tetap dapat dideteksi di dalam audio rekaman.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bunyi Pantulan}
+	\begin{itemize}
+		\item Jika cepat rambat bunyi diketahui, selisih waktu kedatangan dari bunyi langsung dan bunyi pantulan dapat dihitung.
+		\item Hasil kali antara cepat rambat bunyi dan selisih waktu kedatangan ini menghasilkan selisih jarak antara bunyi langsung dan bunyi pantul.
+		\item Informasi ini yang nantinya dapat digunakan untuk menetukan geometri kejadian di TKP/ crime scene.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bunyi Diffuse}
+	\begin{itemize}
+		\item Bunyi yang berpropagasi di dalam ruangan mengakibatkan mikrofon menerima superposisi dari bunyi langsung dan bunyi pantul/dengung.
+		\item Di dalam ruangan yang besar dengan sumber bunyi yang kontinyu, energi bunyi dengung di dalam ruangan ini akan terdistribusi secara uniform.
+		\item Bunyi dengung akan datang dari segala arah, sehingga medan bunyi ini disebut difuse.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bunyi Dengung/ Reverberant}
+	\begin{itemize}
+		\item Jika mikrofon berada di dekat sumber bunyi, audio rekaman biasanya akan didominasi oleh bunyi langsung dibandingkan dengan bunyi dengung.
+		\item Jika mikrofon bergerak menjauhi sumber bunyi, level dari dengung latar di dalam ruangan akan sama tetapi amplitudo tekanan bunyi langsung akan berkurang sebesar 1/r efek dari propagasi spherical.
+		\item Efeknya adalah keseimbangan antara bunyi langsung dan dengung ruangan dalam rekaman akan berubah dari yang didominasi oleh bunyi langsung menjadi didominasi oleh dengung seiring dengan bertambahnya jarak antara sumber bunyi dan mikrofon.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bunyi Dengung/ Reverberant}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{img/img013}
+		\caption{SPL dari mikrofon yang bergerak menjauhi sumber bunyi di ruangan berdengung}
+		\label{fig:img013}
+	\end{figure}
+\end{frame}
+
+\section{Keterarahan Mikrofon}
+
+\begin{frame}
+	\frametitle{Keterarahan Mikrofon}
+	\begin{itemize}
+		\item Karakteristik keterarahan dari mikrofon juga berperan penting dalam merekam sinyal.
+		\item Mikrofon secara umum akan merespon tekanan bunyi di diafragma.
+		\item Designer mikrofon akan merekayasa mikrofon tersebut lebih merespon bunyi dari arah tertentu saja atau meminimalkan pengaruh/respon dari arah lainnya dengan tujuan mengurangi tingkat tekanan bunyi yang tidak diinginkan.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Keterarahan Mikrofon}
+	\begin{itemize}
+		\item Ada 3 jenis karakteristik keterarahan dari mikrofon:
+		\begin{enumerate}
+			\item omnidirectional,
+			\item bidirectional,
+			\item unidirectional.
+		\end{enumerate}
+		\item Pola keterarahan ditunjukkan dengan polar diagram yang menggambarkan jumlah relatif bunyi yang diambil sebagai fungsi dari arah yang ditunjuk oleh mikrofon tersebut.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Mikrofon omnidirectional}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\linewidth]{img/img014a}
+		\caption{Diagram pola keterarahan dari mikrofon omnidirectional}
+		\label{fig:img014a}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Mikrofon bidirectional}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\linewidth]{img/img014b}
+		\caption{Diagram pola keterarahan dari mikrofon bidirectional}
+		\label{fig:img014a}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Mikrofon unidirectional}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\linewidth]{img/img014c}
+		\caption{Diagram pola keterarahan dari mikrofon unidirectional}
+		\label{fig:img014a}
+	\end{figure}
+\end{frame}
+
+\section{Referensi}
 
 \begin{frame}
 	\frametitle{Referensi}
 	\begin{enumerate}
 		\item Maher, R.C., (2018). Principles of Forensic Audio Analysis. New York: Springer.
-		\item https://www.gaussianwaves.com/2020/01/how-to-plot-fft-in-python-fft-of-basic-signals-sine-and-cosine-waves/
+		%\item https://www.gaussianwaves.com/2020/01/how-to-plot-fft-in-python-fft-of-basic-signals-sine-and-cosine-waves/
 	\end{enumerate}
 \end{frame}
+
 \end{document}
