@@ -8,3 +8,4 @@ referensi/*.djvu
 *.synctex.gz
 *.toc
 *__pycache__*
+slide/*/*.pdf
