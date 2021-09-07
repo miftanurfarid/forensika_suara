@@ -12,16 +12,20 @@ import numpy as np
 import matplotlib.pyplot as plt # library untuk plotting
 import scipy.io.wavfile as wav # library untuk baca file wav
 from scipy.fftpack import fft,fftshift
+from scipy.signal import resample
 
 percobaan = 3
 
-filename = 'fena_0001_cut.wav' # nama file
-    
+#filename = 'fena_0001_cut.wav' # nama file
+filename = 'i.wav' # nama file
+#fs = 16000
 fs, x = wav.read(filename) # membaca file wav
+if x.ndim >= 2: # cek mono atau stereo
+    x = x[:,0]
 x = (x - min(x)) / (max(x) - min(x)) * 2 - 1 # normalisasi ke dalam range -1 hingga 1
 x = x - np.mean(x)
+#x = resample(x,int(len(x)*fs/Fs))
 t = np.arange(0,len(x)/fs,1/fs) # data waktu berdasarkan panjang data file wav
-
 plt.plot(t,x) # plot menggunakan library pyplot dari matplotlib package
 plt.title('Waveform dari '+ filename) # plot judul
 plt.xlabel('Waktu (detik)') # label sumbu x
@@ -38,7 +42,7 @@ if percobaan == 1:
     ax.set_title('Double Sided FFT - without FFTShift')
     ax.set_xlabel('Sample points (N-point DFT)')        
     ax.set_ylabel('DFT Values')
-    ax.set_xlim(0,500)
+    ax.set_xlim(0,100)
     fig1.show()
 elif percobaan == 2:
     fft_out = fft(x)
@@ -52,6 +56,4 @@ elif percobaan == 3:
     f = np.arange(-fs/2,fs/2,dF)
     fig, ax = plt.subplots() #create figure handle
     ax.plot(f, np.abs(X)/N)
-    ax.set_xlim(0, 1000)
-    display(np.max(np.abs(X)/N))
-    
+    ax.set_xlim(0, 100)
