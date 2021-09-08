@@ -15,6 +15,8 @@ import numpy as np
 import matplotlib.pyplot as plt # library for plotting
 from signalgen import sine_wave # import the function
 from scipy.fftpack import fft,fftshift
+from scipy.signal import stft
+
 
 f = 10 #frequency = 10 Hz
 overSampRate = 30 #oversammpling rate
@@ -98,5 +100,18 @@ dF = fs/N
 f = np.arange(-fs/2,fs/2,dF)
 fig, ax = plt.subplots() #create figure handle
 ax.plot(f, np.abs(X)/N)
+ax.set_title('Fig 5. Double Sided FFT - with FFTShift')
+ax.set_xlabel('Frequency (Hz)')         
+ax.set_ylabel('|DFT Values|')
 ax.set_xlim(0, 100)
-display(max(X))
+
+"""
+stft
+"""
+f, t, Zxx = stft(x, fs, nperseg=1000)
+amp = 2 * np.sqrt(2)
+plt.pcolormesh(t, f, np.abs(Zxx))
+plt.title('STFT Magnitude')
+plt.ylabel('Frequency [Hz]')
+plt.xlabel('Time [sec]')
+plt.show()
