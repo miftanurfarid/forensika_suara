@@ -9,3 +9,4 @@ referensi/*.djvu
 *.toc
 *__pycache__*
 slide/*/*.pdf
+*/.~*
