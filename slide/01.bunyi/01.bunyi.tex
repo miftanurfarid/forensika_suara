@@ -559,6 +559,109 @@
 	\end{center}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Masking}
+	\begin{itemize}
+		\item Suatu fenomena dimana telinga dan otak kesulitan untuk memperhatikan adanya bunyi tertentu ketika ada bunyi lain yang bersamaan, atau hampir bersamaan, dengan frekuensi yang hampir sama.
+	\end{itemize}
+\end{frame}
+
+\subsection{Pembebanan Frekuensi pada Pengukuran SPL}
+
+\begin{frame}
+	\frametitle{Pembebanan Frekuensi pada\\Pengukuran SPL}
+	\begin{itemize}
+		\item Karena pendengaran manusia memiliki sensitivitas yang tidak uniform dalam fungsi frekuensi, pengukuran SPL biasanya menggunakan filter yang mendekati sensitivitas telinga manusia.
+		\item Filter ini disebut weighting filter/ filter pembebanan.
+		\item Weighting filter ini berupa bandpass filter.
+		\item Ada A-weighting filter (dBA), C-weighting filter (dBC), dan ada 'unweighted'/flat frequency selection.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A-weighting dan C-weighting filter}
+	\begin{center}
+		\includegraphics[width=0.6\linewidth]{img/img018}
+	\end{center}
+\end{frame}
+
+\subsection{Speech Intelligibility}
+
+\begin{frame}
+	\frametitle{Speech Intelligibility}
+	\begin{itemize}
+		\item Dalam pemeriksaan audio forensik sering melibatkan proses interpretasi audio rekaman yang berisikan percakapan manusia.
+		\item Pada beberapa kasus, permintaan tersebut untuk menilai kemungkinan bahwa suatu ujaran dapat dipahami dalam kondisi yang dijelaskan oleh saksi atau ditetapkan oleh bukti lainnya.
+		\item Kondisi yang dapat mengganggu menurunkan speech intelligibility/ kejelasan suara adalah adanya noise.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Speech Intelligibility}
+	\begin{itemize}
+		\item Suatu percakapan yang mengandung noise dideskripsikan dalam SNR atau signal-to-noise ratio.
+		\item SNR biasanya diestimasi berdasarkan asumsi dari level speech dan level noise.
+		\item SNR 0 dB, artinya level speech sama dengan level noise.
+		\item SNR negatif, artinya level noise lebih tinggi daripada level speech.
+		\item SNR positif, artinya level speech lebih tinggi daripada level noise.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Speech Intelligibility}
+	\begin{center}
+		\includegraphics[width=0.6\linewidth]{img/img019}
+	\end{center}
+\end{frame}
+
+\subsection{Signal Processing}
+
+\begin{frame}
+	\frametitle{Signal Processing}
+	\begin{itemize}
+		\item Sistem audio engineering mengambil fluktuasi tekanan bunyi di udara dan mengkonversinya menjadi energi akustik menjadi gerakan mekanik dan sinyal listrik.
+		\item Konversi energi dari satu bentuk ke bentuk lain disebut transduksi, dan transducer yang digunakan adalah mikrofon dan speaker.
+		\item Mikrofon: terdapat diafragma yang sama fungsinya seperti eardrum. Gerakan mekanis di diafragma diubah menjadi sinyal listrik (sinyal analog)
+		\item Sinyal listrik ini merupakan analogi dari sinyal tekanan.
+		\item Sinyal ini dapat dikuatkan, difilter, direkam, dll.
+		\item Speaker, memiliki fungsi yang berkebalikan dari mikrofon.
+	\end{itemize}
+\end{frame}
+
+\subsection{Digital Audio}
+
+\begin{frame}
+	\frametitle{Digital Audio}
+	\begin{itemize}
+		\item Mikrofon menghasilkan sinyal analog, sedangkan sistem audio kebanyakan melibatkan digital signal processing \& storage.
+		\item Sehingga perlu digitalisasi dengan menggunakan analog-to-digital converter (ADC).
+		\item Proses pertama di ADC adalah time sampling
+		\item Laju dari time sampling adalah sampling rate, dalam Hz.
+		\item Proses kedua adalah kuantisasi, yaitu merepresentasikan masing-masing waveform dalam nilai integer.
+		\item Kepresisian kuantisasi dalam bit, contoh pulse-code modulation (PCM) menggunakan 16-bit kuantisasi.
+		\item Audio CD $\rightarrow$ 44.1 kHz sampling rate dan 16-bit resolution.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Digital Audio}
+	\begin{itemize}
+		\item Tidak seperti sinyal analog, sinyal digital dapat disimpan dalam komputer dan ditransmisikan dalam jaringan digital, diproteksi oleh error-correcting code dan perfect copies.
+		\item Namun perlu diperhatikan digitalisasinya agar audio bandwitdh yang sesuai dapat tercapai. Dan juga presisi amplitudo yang tinggi dengan menggunakan bit yang cukup di dalam quantizer-nya.
+		\item Namun perlu memperhatikan aturan Nyquist, yaitu sampling rate minimum adalah 2 $\times$ dari bandwidth sinyal analognya, sehingga sampling rate minimum adalah 40 kHz untuk mengakomodir 20 kHz audible bandwidth.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Digital Audio}
+	\begin{itemize}
+		\item Presisi kuantisasi ditentukan oleh signal-to-quantization noise ratio (SQNR).
+		\item Telpon: 8-bit atau 12-bit (45-78 dB SQNR), high fidelity music 16-bit ($ > $90 dB SQNR).
+		\item Proses rekonstruksi sinyal analog dengan menggunakan digital-to-analog converter (DAC).
+		\item Proses rekonstruksi biasanya step terakhir sebelum power amplifier men-drive loudspeaker atau headphone.
+	\end{itemize}
+\end{frame}
+
 \section{Referensi}
 
 \begin{frame}
