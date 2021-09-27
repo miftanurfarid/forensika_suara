@@ -412,7 +412,6 @@
 		\centering
 		\includegraphics[width=0.6\linewidth]{img/img014a}
 		\caption{Diagram pola keterarahan dari mikrofon omnidirectional}
-		\label{fig:img014a}
 	\end{figure}
 \end{frame}
 
@@ -422,7 +421,6 @@
 		\centering
 		\includegraphics[width=0.6\linewidth]{img/img014b}
 		\caption{Diagram pola keterarahan dari mikrofon bidirectional}
-		\label{fig:img014a}
 	\end{figure}
 \end{frame}
 
@@ -432,7 +430,6 @@
 		\centering
 		\includegraphics[width=0.6\linewidth]{img/img014c}
 		\caption{Diagram pola keterarahan dari mikrofon unidirectional}
-		\label{fig:img014a}
 	\end{figure}
 \end{frame}
 
@@ -441,10 +438,125 @@
 \begin{frame}
 	\frametitle{Karakteristik Pendengaran Manusia}
 	\begin{itemize}
-		\item Investigasi audio forensik melibatkan pertanyaan tentang kemampuan mendengar.
-		\item Akankah suara tertentu dapat didengar oleh pendengar dalam situasi yang ditentukan?
-		\item Contoh: 
+		\item Dalam audio forensik, terkadang melibatkan beberapa pertanyaan terkait kemampuan pendengaran manusia.
+		\item Apakah seseorang dapat mendengarkan bunyi dalam kondisi tertentu?
+		\item Misalkan, apakah bunyi alarm masih terdengar ada jarak tertentu, atau pada saat ada bunyi lain yang menggangu.
+		\item Permasalahan di atas memerlukan pemahaman terkait kekuatan dan kelemahan dari sistem pendengaran manusia.
 	\end{itemize}
+\end{frame}
+
+\subsection{Anatomi dan Fisiologi Telinga}
+
+\begin{frame}
+	\frametitle{Telinga}
+	\begin{itemize}
+		\item Telinga: organ sensory yang mentransduksi energi bunyi ke dalam neural code yang kemudian diproses oleh otak.
+		\item Anatomi dasar dari telinga dibagi menjadi 3 bagian: telinga bagian luar, telinga bagian tengah, dan telinga bagian dalam.
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{img/img015}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Telinga Bagian Luar}
+	\begin{center}
+		\includegraphics[height=0.9\textheight]{img/img015}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Telinga Bagian Luar}
+	\begin{itemize}
+		\item Banyak mamalia yang memiliki movable pinna, tapi tidak untuk manusia.
+		\item Ear canal: 0.8 cm - 2.5 cm.
+		\item Tekanan udara di dalam kanal sama dengan tekanan udara ambient-nya.
+		\item Bagian paling dalam dari ear canal terdapat tympanic membrane/ eardrum/ gendang telinga yang kedap udara dan kedap air tapi masih mungkin terjadinya akustik koupling langsung dari bunyi luar.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Telinga Bagian Luar}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.9\textheight]{img/img016}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Bentuk dan struktur dari telinga bagian luar serta posisi dari telinga terhadap kepala dan tubuh bagian atas, menyebabkan difraksi akustik yang bergantung pada azimuth \& elevasi dari sumber bunyi dan panjang gelombang dari bunyi.
+			\item Menyebabkan manusia dapat mendeteksi arah sumber bunyi $\rightarrow$ binaural hearing
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Telinga Bagian Tengah}
+	\begin{center}
+		\includegraphics[height=0.9\textheight]{img/img015}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Telinga Bagian Tengah}
+	\begin{itemize}
+		\item Telinga bagian tengah: di antara eardrum dan telinga bagian dalam.
+		\item Terdapat 3 ossicles (tiny bones) \& tympanic cavity.
+		\item Ossicles = malleus/ hammer terhadap permukaan bagian dalam dari eardrum.
+		\item Incus/anvil dan stapes/stirrup terhubung ke oval windows dari teliga bagian dalam.
+		\item Eustachian tube: kanal antara middle ear cavity dan bagian belakang nashopharynx.
+		\item Perbedaan tekanan $\rightarrow$ udara mengalir di dalam eustachian tube $\rightarrow$ sensasi yang kita rasakan saat naik pesawat/gunung.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Telinga Bagian Dalam}
+	\begin{itemize}
+		\item Telinga bagian dalam terdapat:
+		\begin{enumerate}
+			\item Cochlea
+			\item Tiga semicircular canal
+			\item Struktur-struktur yang membentuk vestibular organ keseimbangan.
+		\end{enumerate}
+		\item Tiga semicircular canal sensitif terhadap kecepatan angular dalam ruang 3 dimensi.
+		\item Dua semicircular canal yang paling kecil sensitif terhadap percepatan linear yang berkaitan dengan gravitasi.
+		\item Cochlea merupakan organ neosensory yang paling penting dalam sistem pendengaran.
+		\item Cochlea sensitif terhadap getaran yang disebabkan oleh bunyi.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Proses Pendengaran}
+	\begin{center}
+		\includegraphics[height=0.9\textheight]{img/img015}
+	\end{center}
+\end{frame}
+
+\subsection{Psikoakustik}
+
+\begin{frame}
+	\frametitle{Psikoakustik}
+	\begin{itemize}
+		\item Sebagai pendeteksi suara, sistem pendengaran manusia memiliki beberapa kekuatan dan kelemahan.
+		\item Frekuensi range: 20 Hz hingga 20 kHz.
+		\item Tapi kemampuan telinga dalam mendeteksi bunyi bergantung pada amplitude tekanan pada frekuensi yang diberikan, kompleksitas stimulus, dll.
+		\item Investigator biasanya tidak mengutamakan fisiologi sistem pendengaran manusia saja, tapi juga persepsi bunyi.
+		\item Karena beberapa kasus yang melibatkan beberapa pertanyaan terkait audibility, intelligibility, speaker identification dan testemino saksi lainnya.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Kekerasan Bunyi (Loudness)}
+	\begin{itemize}
+		\item Tidak seperti tingkat tekanan bunyi (TTB) / sound pressure level (SPL), yang bernilai objektif. Kekerasan bunyi/ Loudness bernilai perseptual yang bergantung pada masing-masing orang.
+		\item Kekerasan bunyi bergantung pada frekuensi dan juga amplitude bunyi di telinga.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Equal Loudness Contours}
+	\begin{center}
+			\includegraphics[width=0.9\linewidth]{img/img017}
+	\end{center}
 \end{frame}
 
 \section{Referensi}
@@ -453,6 +565,7 @@
 	\frametitle{Referensi}
 	\begin{enumerate}
 		\item Maher, R.C., (2018). Principles of Forensic Audio Analysis. New York: Springer.
+		\item Auditory Brain Stem Mechanisms of Sound Localization [http://uilis.unsyiah.ac.id/oer/items/show/1217]
 		%\item https://www.gaussianwaves.com/2020/01/how-to-plot-fft-in-python-fft-of-basic-signals-sine-and-cosine-waves/
 	\end{enumerate}
 \end{frame}
