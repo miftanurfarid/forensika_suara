@@ -1,0 +1,284 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 4cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tugas 3 - Forensika Suara
+\end_layout
+
+\begin_layout Enumerate
+Rekamlah 3 file suara berformat wav dimana masing-masing file berisikan
+ satu kalimat yang berbeda.
+\end_layout
+
+\begin_layout Enumerate
+Dari 3 file tersebut, edit salah satu file saja.
+\end_layout
+
+\begin_layout Enumerate
+Serahkan 3 file tersebut ke teman kalian berdasarkan pembagian berikut ini
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Jimly 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Della 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Iqbal 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Zafira 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Jimly
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mahasiswa yang menerima file tersebut bertugas untuk menganalisis file-file
+ tersebut kemudian memberikan kesimpulan file mana yang telah diedit dan
+ file mana yang asli.
+\end_layout
+
+\begin_layout Enumerate
+Analisis yang dilakukan adalah analisis critical listening, waveform dan
+ spectrogram-nya
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Analisis waveform dan spectrogram bisa menggunakan software 
+\series bold
+Audacity
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sehingga file yang dikumpulkan adalah
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+File wav yang kalian buat (termasuk yang sudah di edit) dan yang kalian
+ analisis.
+\end_layout
+
+\begin_layout Enumerate
+Jawaban dari file yang telah diedit dan yang dianalisis
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Contoh:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Jimly
+\series default
+ melakukan perekaman 3 kalimat dalam 3 file yang berbeda dan membuat .
+ Sehingga didapatkan 3 file sebagai berikut:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+File 1 berisikan kalimat 1
+\end_layout
+
+\begin_layout Enumerate
+File 2 berisikan kalimat 2
+\end_layout
+
+\begin_layout Enumerate
+File 3 berisikan kalimat 3
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Jimly
+\series default
+ mengedit salah satu file tersebut, misalkan File 2.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Bisa dengan cara menghapus beberapa kata, merubah pitch, dll.
+\end_layout
+
+\begin_layout Enumerate
+Proses editing bisa menggunakan software 
+\series bold
+Audacity
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Jimly
+\series default
+ membuat dokumen yang berisikan jawaban terkait file yang diedit sebelumnya.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Jimly
+\series default
+ mengirimkan 3 file wav tersebut ke 
+\series bold
+Della
+\series default
+.
+ Disaat yang sama 
+\series bold
+Jimly 
+\series default
+menerima file dari 
+\series bold
+Zafira
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Jimly 
+\series default
+melakukan analisis terhadap 3 file yang diterima dari 
+\series bold
+Zafira
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Analisis critical listening
+\end_layout
+
+\begin_layout Enumerate
+Analisis waveform dan spectrogram
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Berdasarkan hasil analisis tersebut, 
+\series bold
+Jimly 
+\series default
+memberikan kesimpulan bahwa File X adalah file yang telah diedit (tidak
+ asli)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Jimly 
+\series default
+mengupload ke LMS:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+3 file yang telah dibuat dan diedit + jawabannya.
+\end_layout
+
+\begin_layout Enumerate
+3 file dari Zafira + dokumen hasil analisis.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document
