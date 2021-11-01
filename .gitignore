@@ -10,3 +10,6 @@ referensi/*.djvu
 *__pycache__*
 slide/*/*.pdf
 */.~*
+*.xoj
+*.wav
+*.lyx~
